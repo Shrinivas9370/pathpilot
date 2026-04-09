@@ -1,0 +1,300 @@
+.compare-page-wrap {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0f172a;
+}
+
+.compare-nav {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.compare-nav .btn-ghost {
+  color: #475569;
+  background: rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+.compare-nav .btn-ghost:hover {
+  background: rgba(0,0,0,0.1);
+  color: #0f172a;
+}
+
+.compare-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.compare-badge {
+  display: inline-block;
+  background: #f3e8ff;
+  color: #6b21a8;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.compare-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.compare-desc {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* TABLE STYLES */
+.compare-table-container {
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+  margin-bottom: 3rem;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.compare-table th {
+  background: #f8fafc;
+  padding: 1.2rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.compare-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.compare-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.compare-table tbody tr:hover {
+  background: #f8faff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  position: relative;
+  z-index: 10;
+}
+
+.compare-table td {
+  padding: 1.2rem 1.5rem;
+  vertical-align: middle;
+}
+
+.cell-career {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.career-indicator {
+  width: 6px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.career-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.career-title {
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.career-tagline {
+  font-size: 0.85rem;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
+.cell-salary strong {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* PROGRESS BARS */
+.progress-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.progress-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #334155;
+}
+
+.progress-bar-bg {
+  width: 120px;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease-out;
+}
+
+.cell-timeline {
+  color: #475569;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.timeline-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.row-arrow {
+  color: #6366f1;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.2s ease;
+}
+
+.compare-table tbody tr:hover .row-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* SUMMARY CARDS */
+.compare-summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.summary-card {
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+}
+
+.summary-icon {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.summary-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.summary-sub {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* Card Themes */
+.highlight-purple {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+}
+
+.highlight-emerald {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.highlight-blue {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+@media (max-width: 1024px) {
+  .progress-bar-bg {
+     width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .compare-page-wrap {
+    padding: 2rem 1rem;
+  }
+  .compare-title {
+    font-size: 2.2rem;
+  }
+  .compare-table-container {
+    border-radius: 12px;
+  }
+  .cell-career {
+     min-width: 250px;
+  }
+}

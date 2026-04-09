@@ -1,0 +1,81 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: var(--pp-bg-nav);
+  border-right: 1px solid var(--pp-border);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  color: var(--pp-primary);
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.sidebar-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  flex: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--pp-radius-md);
+  color: var(--pp-text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+  background-color: rgba(99, 102, 241, 0.1);
+  color: var(--pp-primary);
+}
+
+.sidebar-footer {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--pp-border);
+}
+
+.user-profile {
+  background: var(--pp-bg-surface);
+  padding: 0.75rem;
+  border-radius: var(--pp-radius-md);
+  border: 1px solid var(--pp-border);
+}
+
+.avatar {
+  background: var(--pp-primary);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info .name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.user-info .role {
+  font-size: 0.75rem;
+  color: var(--pp-text-muted);
+}
